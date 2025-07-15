@@ -22,7 +22,7 @@
 
 ### 2.1 硬件与核心框架
 
-- 硬件平台: NVIDIA RTX 4090 (24GB)
+- 硬件平台: NVIDIA RTX 4090 (48GB)
 - **Pytorch版本**: 2.6.0+cu124
 - **核心库**: transformers==4.50.0, peft==0.15.1
 

@@ -35,9 +35,9 @@
 
 **第三步：模型合并与性能评测**
 
-训练完成后，我们需要将LoRA权重合并到基座模型中，并使用评测脚本验证其性能。
+训练完成后，对于LoRA微调，我们需要将LoRA权重合并到基座模型中，并使用评测脚本验证：在不同微调方法下模型的性能变化。
 
-1.  **合并LoRA权重**:
+1.  **合并LoRA权重**(可选，全参微调则跳过该步骤):
     使用 `evaluation` 目录下的配置文件，将训练好的LoRA权重合并到原始模型中。请确保已根据您的环境修改 `qwen_2.5vl_3b_lora_merge.yaml` 文件中的模型、适配器和导出路径。
     ```bash
     llamafactory-cli export evaluation/qwen_2.5vl_3b_lora_merge.yaml
